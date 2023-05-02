@@ -4,6 +4,6 @@
 echo "Removing all temporary files..."
 
 # The 'find' command searches for all files with the '.tmp' extension in the specified directory and its subdirectories, and the '-delete' flag deletes them.
-find "/mnt/c/Users/jonathankeefe.ASTONBERKELEY/AppData/Local/Temp" -type f -name "*.tmp" -delete
+find "/mnt/c/Users/AppData/Local/Temp" -type f -name "*.tmp" -delete
 
 echo "Done!"
