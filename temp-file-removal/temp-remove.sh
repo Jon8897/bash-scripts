@@ -7,7 +7,7 @@ echo "Removing all temporary files..."
 if [[ "$OSTYPE" == "linux-gnu"* ]]; then
   find "$TMPDIR" -type f -name "*.tmp" -delete | tee -a deleted_files.log
 elif [[ "$OSTYPE" == "msys" || "$OSTYPE" == "win32" ]]; then
-  find "%TEMP%" -type f -name "*.tmp" -delete | tee -a deleted_files.log
+  find "$TEMP" -type f -name "*.tmp" -delete | tee -a deleted_files.log
 else
   echo "Unsupported OS: $OSTYPE"
   exit 1
